@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="{{LANGUAGE_CODE}}">
+{% load pages_tags mezzanine_tags i18n future staticfiles theme_tags %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="maths">
+    <meta name="description" content="">
+    <title>{% block title %}{{SITENAME}}{% endblock %}</title>
+    <link rel="shortcut icon" href="http://averagehuman.org/assets/averagehuman/img/favicon.ico">
+    <style>
+    @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+    </style>
+    <link rel="stylesheet" href="{{SITEURL}}foundation/css/normalize.css">
+    <link rel="stylesheet" href="{{SITEURL}}foundation/css/foundation.css">
+    <link rel="stylesheet" href="{{SITEURL}}foundation/css/general_foundicons.css">
+    <link rel="stylesheet" href="{{SITEURL}}foundation/css/accessibility_foundicons.css">
+    <link rel="stylesheet" href="{{SITEURL}}foundation/css/social_foundicons.css">
+    <link rel="stylesheet" href="{{SITEURL}}pretty/css/prettyPhoto.css">
+    <link rel="stylesheet" href="{{SITEURL}}linkur/css/linkur.css">
+    <link rel="stylesheet" href="{{SITEURL}}averagehuman/css/averagehuman.css">
+    <script src="{{SITEURL}}foundation/js/vendor/custom.modernizr.js"></script>
+
+</head>
+
+<body>
+    <div id="page-wrap">
+        <header id="header">
+            <div id="primary-nav-container">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div class="contain-to-grid sticky">
+                        <nav class="top-bar" data-topbar>
+                            <ul class="title-area">
+                                <li class="name"><a id="brand" href="/"><i id="brand-icon" class="accessibility foundicon-universal-access"><span id="brand-title">maths.averagehuman</span></i> </a></li>
+                                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+                            </ul> 
+                            <section class="top-bar-section">
+                                <ul id="primary-menu" class="right">
+                                    <li><a title="Home" href="/">HOME</a></li>
+                                    <li class="has-dropdown"><a href="{{SITEURL}}/categories/">CATEGORIES</a>
+                                    <ul class="dropdown">
+                                        <li><a href="/">All</a></li>
+                                        {% for category, articles in categories %}
+                                            <li><a href="{{SITEURL}}/{{category.url}}">{{category}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="page-content">
+        {% block page-content %}
+            <div class="row">
+                <div class="large-12 columns">
+                    {% block main %}
+                        {{page.content}}
+                    {% endblock %}
+                </div>
+            </div>
+        {% endblock %}
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="row">
+        <div class="large-12 columns">
+        Copyright &copy; 2014 averagehuman.
+        </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/assets/CACHE/js/c2b824359e59.js"></script>
+</body>
+</html>
+

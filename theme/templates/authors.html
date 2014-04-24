@@ -1,0 +1,14 @@
+{% extends "bigmouth/base.html" %}
+
+{% block meta-tags %}
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+{% endblock %}
+
+{% block content %}
+<ul>
+{% for author, articles in authors %}
+    <li>{{ author }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
+

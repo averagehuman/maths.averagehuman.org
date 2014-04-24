@@ -1,0 +1,12 @@
+{% extends "site_base.html" %}
+{% load bigmouth_tags %}
+
+{% block meta-tags %}
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+{% endblock %}
+
+{% block page-content %}        
+    <div class="frontpage">
+      {% render_article_summary_list %}
+    </div>
+{% endblock %}

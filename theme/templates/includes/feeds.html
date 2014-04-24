@@ -1,0 +1,7 @@
+
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+    {% if category %}
+    <link href="{{ FEED_DOMAIN }}/feeds/category/{{category.slug}}.atom" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} - {{category}} Atom Feed" />
+    <link href="{{ FEED_DOMAIN }}/feeds/category/{{category.slug}}.rss" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} - {{category}} RSS Feed" />
+    {% endif %}

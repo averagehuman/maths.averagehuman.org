@@ -1,0 +1,9 @@
+{% extends "bigmouth/base.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block page-content %}        
+    <article>
+      <div class="content article-content">
+        {{ page.content|safe }}
+      </div>
+    </article>
+{% endblock %}

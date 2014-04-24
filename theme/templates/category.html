@@ -1,0 +1,9 @@
+{% extends "site_base.html" %}
+{% load bigmouth_tags %}
+
+{% block title %}{{ SITENAME }} - {{ category }}{% endblock %}
+
+{% block page-content %}        
+    <h3 class="article-index-heading">{{category|capfirst}}</a></h3>
+    {% render_article_summary_list %}
+{% endblock %}
