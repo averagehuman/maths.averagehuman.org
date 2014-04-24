@@ -145,4 +145,4 @@ assumption, we have that $p \\nmid a_i \\text{ for } i=1,\\dots,n$, and so:
 and it therefore follows by the already proven case $n=2$ that
 $p \\nmid a_1a_2 \\cdots a_n$. $\\Box$
 
-.. _division algorithm: |filename|/2013/numbertheory/20130508-euclidean-division.rst
+.. _division algorithm: {filename}/content/2013/numbertheory/20130508-euclidean-division.rst
