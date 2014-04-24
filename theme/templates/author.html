@@ -1,9 +1,7 @@
-{% extends "site_base.html" %}
-{% load bigmouth_tags %}
+{% extends "base.html" %}
 
 {% block title %}{{ SITENAME }} - {{ author }}{% endblock %}
 
-{% block page-content %}        
+{% block content %}        
     <h3 class="article-index-heading">{{author}}</a></h3>
-    {% render_article_summary_list %}
 {% endblock %}

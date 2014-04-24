@@ -1,5 +1,4 @@
-{% extends "site_base.html" %}
-{% load bigmouth_tags %}
+{% extends "base.html" %}
 
 {% block meta-tags %}
     <meta HTTP-EQUIV="Expires" CONTENT="-1">
@@ -7,6 +6,5 @@
 
 {% block page-content %}        
     <div class="frontpage">
-      {% render_article_summary_list %}
     </div>
 {% endblock %}
