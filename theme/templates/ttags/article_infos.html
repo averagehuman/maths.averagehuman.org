@@ -1,4 +1,2 @@
-{% load bigmouth_tags %}
-<p>In <a href="{% permalink_for_category article.category %}">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}
-{% render_article_tags %}
+<p>In <a href="{{article.category}}">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}
 </p>

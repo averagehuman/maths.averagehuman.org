@@ -1,8 +1,7 @@
-{% load bigmouth_tags %}
 <div class="article-index">
     <ul class="article-listing sub-nav">
     {% for article in articles %}
-        <li>{% render_article_summary %}</li>
+        <li>{{article}}</li>
     {% endfor %}
     </ul>
 </div>

@@ -1,9 +1,8 @@
-{% load bigmouth_tags %}
 <article>
     <div class="article-headline row">
         <div class="article-headline-banner large-12 columns">
             <h5 class="article-headline-timestamp">{{article.date|date:"d M, Y"}}&nbsp;&nbsp;<a href="{% permalink_for_article article %}">{{ article.title }}</a></h5>
-            <h6 class="subheader">Posted in <a href="{% permalink_for_category article.category %}">{{article.category.name}}</a> by <a href="{% permalink_for_author article.author %}">{{article.author.name}}</a>.</h6>
+            <h6 class="subheader">Posted in <a href="{{article.category}}">{{article.category.name}}</a> by <a href="{{article.author}}">{{article.author.name}}</a>.</h6>
         </div>
     </div>
 </article>

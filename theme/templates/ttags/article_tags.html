@@ -1,9 +1,8 @@
-{% load bigmouth_tags %}
 {% if tags %}
     <div class="panel">
         <h6 class="panel-hd">Tags</h6>
     <ul class="sub-nav">
-        {% for tag in tags %}<li><a class="" href="{% permalink_for_tag tag %}">{{tag}}</a></li>
+        {% for tag in tags %}<li><a class="" href="">{{tag}}</a></li>
         {% endfor %}
     </ul>
     </div>
