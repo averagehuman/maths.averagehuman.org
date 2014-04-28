@@ -1,1 +1,12 @@
 {% extends "base.html" %}
+{% block title %}{{ article.title }}{% endblock %}
+{% block content %}        
+    <article>
+        <header>
+        <h1 class="article-title"><a href="{{SITEURL}}/{{article.url}}" rel="bookmark">{{article.title}}</a></h1>
+        </header>
+        <div class="article-content">
+        {{ article.content }}
+        </div>
+    </article>
+{% endblock %}
