@@ -71,7 +71,7 @@ which is an element of $S$ smaller then $r$, a contradiction. $\\Box$
 
 
 .. _Euclid: http://en.wikipedia.org/wiki/Euclid
-.. _Euclid's Lemma: |filename|/2013/numbertheory/20130511-divisibility-and-euclids-lemma.rst
+.. _Euclid's Lemma: {filename}/2013/numbertheory/20130511-divisibility-and-euclids-lemma.rst
 .. _Bezout's Identity: http://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity
 .. _Euclidean Division Algorithm: http://en.wikipedia.org/wiki/Euclidean_algorithm
 .. _integer floor: http://en.wikipedia.org/wiki/Floor_and_ceiling_functions
