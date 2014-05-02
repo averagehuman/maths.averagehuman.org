@@ -1,0 +1,258 @@
+html, body {
+    height: 100%;
+}
+#page-wrap {
+    height: auto;
+    min-height: 100%;
+    margin-bottom: -40px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#page-wrap:after {
+        content: "";
+            display: block;
+                height: 40px;
+            }
+#header {
+    margin-bottom: 1.5em;
+    padding-top: 0px;
+    background-color: #efef66;
+}
+#primary-nav-container {
+    border-top: solid 0px #ededed;
+}
+#user-nav-container {
+}
+#page-content {
+    padding-bottom: 120px;
+}
+
+#footer {
+    position: relative;
+    height: 40px;
+    clear: both;
+    background-color: rgb(51, 51, 51);
+    padding: 12px 0 6px;
+}
+#footer {
+    color: #efefef;
+}
+#footer a,#footer a:visited {
+    color: lime;
+}
+
+.row {
+    max-width: 760px;
+}
+h1.banner {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin-bottom: 0;
+}
+h1.banner .title-text {
+    vertical-align: top;
+    padding-left: 0.15em;
+}
+h1.banner a, h1.banner:visited {
+    color: #ECEC9C;
+}
+h1.banner a:hover {
+    color: #bcbcbc;
+}
+h1.category {
+    color: #6e6e6e;
+    border-top: solid 2px #6e6e6e;
+    border-bottom: solid 2px #6e6e6e;
+    border: solid 2px #6e6e6e;
+    margin-bottom: 0.5em;
+    padding-left: 0.2em;
+    background: ghostwhite;
+    font-size: 1.8em;
+}
+
+#primary-nav-container {
+    background: rgb(51, 51, 51);
+}
+#primary-nav-container a {
+    font-weight: bold;
+}
+#primary-nav-container a.menu {
+    line-height: 42px;
+}
+#primary-menu li > a {
+    font-size: 1em;
+    font-weight: normal;
+}
+#primary-menu li > a:hover {
+    background-color: rgb(115, 115, 115);
+    color: yellow;
+}
+#primary-menu li.active > a {
+    background: rgb(51, 51, 51);
+    color: yellow;
+}
+
+a#brand, a#brand:visited {
+    color: #ECEC9C;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-weight: normal;
+    padding-right: 0.4em;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+a#brand:hover {
+    color: yellow;
+}
+
+#brand-icon {
+    display: inline;
+}
+#brand-title {
+    letter-spacing: -1px;
+    font-style: normal;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 0.2em;
+    color: #ECEC9C;
+    position: relative;
+    top: -4px;
+}
+
+
+.inline-radio-group {
+    margin: 10px 0;
+}
+.inline-radio-group label {
+    display: inline;
+    padding-right: 25px;
+}
+.panel.warning {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 141, 161);
+    margin-bottom: 1.35em;
+    padding: 6px 20px;
+    background: none repeat scroll 0% 0% pink;
+}
+.panel.warning, .panel.warning p, .panel.warning li {
+    color: red;
+    font-weight: bold;
+}
+.panel.form-field {
+    padding-bottom: 0.0em;
+    padding-top: 0.8em;
+}
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.row .block {
+    margin-bottom: 8px;
+}
+
+div.block p {
+    color: rgb(101, 101, 101);
+}
+
+div.block img.th {
+    margin-top: 0.55em;
+}
+
+.block ul.logos {
+    margin-top: 8px;
+}
+.form-actions .button {
+    margin-bottom: 0;
+}
+
+.help-block {
+    display: none;
+}
+ul.link-list {
+    list-style: none inside none;
+    margin-left: 0;
+}
+ul.link-list > li > .row {
+    border-bottom: dotted 1px #cdcdcd;
+    margin: 0;
+}
+ul.link-list > li:first-child .row {
+    border-top: dotted 0px #cdcdcd;
+}
+ul.link-list > li.even > .row {
+}
+
+ul.link-list > li h2 {
+    font-weight: normal;
+    font-size: 1.4em;
+    border: 0;
+    margin-bottom: 0;
+}
+
+ul.link-list > li h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+    line-height: 1em;
+    margin-top: 0;
+}
+ul.link-list > li h2 a {
+    color: #3e3e3e;
+}
+ul.link-list > li h2 a:visited {
+    color: #8e8e8e;
+}
+ul.link-list > li h2 a:hover {
+    color: #8e8e8e;
+    text-decoration:underline;
+}
+
+ul.link-list > li .frame {
+    padding: 0;
+    text-align: center;
+}
+
+ul.link-list > li .frame img {
+    display: block;
+    margin: 0.4em 0 0.2em 0.2em;
+}
+
+ul.link-list > li .frame a, ul.link-list > li .frame a:visited {
+    color: #3e3e3e;
+}
+ul.link-list > li .frame a:hover {
+    color: #8e8e8e;
+}
+
+ul.link-list > li .frame i {
+    font-size: 2.6em;
+}
+
+ul.link-list .link-meta {
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+textarea {
+    min-height: 85px;
+}
+div.form-group {
+    margin-bottom: 6px;
+}
+p.field-tip {
+    margin: 0.25em;
+    color: #5e5e5e;
+}
+dl dd {
+    margin-left: 1em;
+}
+blockquote.welcome {
+    margin: 1.4em 0;
+}
+.flush-right {
+    padding-right: 0;
+}
+
