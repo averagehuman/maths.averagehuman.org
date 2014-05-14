@@ -1,35 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}        
-    <div class="frontpage listing">
+    <ul class="frontpage listing">
         {% if articles %}
             {% for article in articles_page.object_list %}
 
-            {# First item #}
-
-            <aside id="featured">
-                <div class="body">
-                <article>
-                <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-                {{ article.content }}
-                </article>
-                {% if loop.last and (articles_page.has_previous() or not articles_page.has_previous() and loop.length > 1) %}
-                {% include 'pagination.html' %}
-                {% endif %}
-            </div>
-            </aside><!-- /#featured -->
-
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
 
             {% endfor %}
         {% else %}
-            <section id="content" >
-                <div class="body">
-                <h2>Pages</h2>
-                    {% for page in PAGES %}
-                    <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-                    {% endfor %}
-                </div>
-            </section>
+            {% for page in PAGES %}
+            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
         {% endif %}
     </div>
 {% endblock %}
